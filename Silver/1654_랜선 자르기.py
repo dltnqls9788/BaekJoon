@@ -1,6 +1,12 @@
+# k = 4
+# n = 11
+# array = [802, 743, 457, 539]
+
+
 import sys 
 # k : 이미 가지고 있는 랜선의 개수 
 # n : 필요한 랜선의 개수
+
 k, n = map(int, sys.stdin.readline().split())
 array = []
 for i in range(k):
@@ -14,7 +20,7 @@ while (start <= end):
     cnt = 0 
 
     for i in array:
-        cnt += i// mid
+        cnt += i // mid
 
     if cnt >= n:
         start = mid + 1 # 길이를 더 길게 
