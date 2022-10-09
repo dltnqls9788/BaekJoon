@@ -6,10 +6,9 @@ arr = list(map(int, sys.stdin.readline().split()))
 arr.sort()
 
 for i in arr:
-    if l == i:
-        l += 1
-    else:
-        print(l)
+    if i > l:
         break
+    elif i <= l:
+        l+=1
 
 print(l)
